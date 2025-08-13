@@ -7,65 +7,80 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
       margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
+      background-color: #f4f6f8;
       color: #333;
     }
     header {
       background-color: #004080;
       color: #fff;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem 2rem;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     header p {
-      margin: 0.5rem 0 0;
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
     }
-    nav {
-      text-align: center;
-      margin: 1rem 0;
-    }
-    nav a {
-      margin: 0 1rem;
-      color: #004080;
+    header a {
+      color: #fff;
+      margin: 0 0.5rem;
       text-decoration: none;
       font-weight: bold;
     }
     main {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
     h2 {
       color: #004080;
       border-bottom: 2px solid #004080;
       padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .project-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .project-card a {
+      color: #004080;
+      font-weight: bold;
+      text-decoration: none;
     }
     ul {
-      list-style-type: none;
+      list-style: none;
       padding-left: 0;
     }
     li {
       margin-bottom: 1rem;
-    }
-    a.project-link {
-      color: #004080;
-      text-decoration: none;
-      font-weight: bold;
     }
     footer {
       text-align: center;
       padding: 2rem 1rem;
       background-color: #eee;
       margin-top: 2rem;
+    }
+    .skills, .education {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .skill, .edu {
+      background-color: #fff;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      flex: 1 1 200px;
     }
   </style>
 </head>
@@ -75,9 +90,9 @@
   <h1>Christine Yue</h1>
   <p>Computer Science | Biological Sciences Minor</p>
   <p>
-    <a href="mailto:christine11702@gmail.com" style="color:#fff;">Email</a> | 
-    <a href="https://github.com/117o3" style="color:#fff;">GitHub</a> | 
-    <a href="https://www.linkedin.com/in/christineyue17" style="color:#fff;">LinkedIn</a>
+    <a href="mailto:christine11702@gmail.com">Email</a> |
+    <a href="https://github.com/117o3">GitHub</a> |
+    <a href="https://www.linkedin.com/in/christineyue17">LinkedIn</a>
   </p>
 </header>
 
@@ -85,16 +100,17 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li>
-        <a href="https://github.com/117o3/your-ragflow-project-repo" class="project-link">RAGFlow Research & Implementation</a><br>
-        Researched and implemented the RAGFlow framework, analyzing architecture, pipeline components, and applications to improve AI chatbot outputs for multiple business use cases.
-      </li>
-      <li>
-        <a href="https://github.com/117o3/your-friend-recommendation-repo" class="project-link">Friend Recommendation Algorithm</a><br>
-        Developed a Python-based social network recommendation system using CSV parsing and graph traversal algorithms, simulating design and implementation in a software development lifecycle.
-      </li>
-    </ul>
+
+    <div class="project-card">
+      <a href="https://github.com/117o3/your-ragflow-project-repo">RAGFlow Research & Implementation</a>
+      <p>Researched and implemented the RAGFlow framework, analyzing architecture, pipeline components, and applications to improve AI chatbot outputs for multiple business use cases.</p>
+    </div>
+
+    <div class="project-card">
+      <a href="https://github.com/117o3/your-friend-recommendation-repo">Friend Recommendation Algorithm</a>
+      <p>Developed a Python-based social network recommendation system using CSV parsing and graph traversal algorithms, simulating the design and implementation phases of a software development lifecycle.</p>
+    </div>
+
   </section>
 
   <section id="experience">
@@ -102,13 +118,39 @@
     <ul>
       <li>
         <strong>AT&T | AI & Machine Learning Intern</strong><br>
-        Designed and deployed AI prototypes including a chatbot for business use cases; collaborated with cross-functional teams and practiced Agile principles to ensure timely delivery.
+        Designed and deployed AI prototypes including chatbots for business use cases; collaborated with cross-functional teams and practiced Agile principles to deliver end-to-end product solutions.
       </li>
       <li>
         <strong>UMPC – Hillman Cancer Center | Genomic Data Analyst Intern</strong><br>
-        Processed and visualized biomedical datasets using R, SQL, and Power BI; optimized pipelines, maintained data integrity, and supported research initiatives.
+        Processed and visualized biomedical datasets using R, SQL, and Power BI; optimized pipelines, maintained data integrity, and supported high-impact research initiatives.
+      </li>
+      <li>
+        <strong>Sushi Yokohama | Front of House Lead & Operations Coordinator</strong><br>
+        Managed guest experience, trained new hires, and streamlined daily operations; applied creativity and hospitality knowledge to enhance customer satisfaction over 5+ years.
       </li>
     </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Python, Java, R, SQL</div>
+      <div class="skill">REST APIs, Git/GitHub, Agile/Scrum</div>
+      <div class="skill">Power BI, RStudio, Data Visualization</div>
+      <div class="skill">UI/UX, Graphic Design, Product Prototyping</div>
+      <div class="skill">Written & Verbal Communication, Leadership</div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education">
+      <div class="edu">
+        <strong>Rutgers University</strong><br>
+        B.S. Computer Science, Minor in Biological Sciences<br>
+        Summa Cum Laude, Dean’s List, GPA: 3.75
+      </div>
+    </div>
   </section>
 
 </main>
